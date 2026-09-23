@@ -52,6 +52,7 @@
 | 分析 | 結果 | 詳細 |
 |---|---|---|
 | SAM3ボール追跡 | 300秒中93%（8370/8991フレーム）で位置取得 | [STATUS.md](STATUS.md) |
+| プレー分解（ボール速度→ドリブル/パス分類 + P&R候補検出） | 115セグメント自動分割、P&R候補10件検出 | [docs/CASE_STUDIES.md](docs/CASE_STUDIES.md) |
 | ゼロショットMOT検証（McByte++） | 選手10人にID11個、IDスイッチ実質ゼロ、re-ID成功1件 | [docs/CASE_STUDIES.md#mcbyte](docs/CASE_STUDIES.md#mcbyte-の検証) |
 | ジャージ番号OCR パイロット | 5/5（100%）、追加学習なし | [features/jersey-ocr/README.md](features/jersey-ocr/README.md) |
 | 選手別シュート帰属 | トラッキングID×HSVチーム分類でシュートを選手に紐付け | [features/player-shot-attribution/README.md](features/player-shot-attribution/README.md) |
