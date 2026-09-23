@@ -1,0 +1,62 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.venv
+venv
+.env
+
+# Jupyter
+.ipynb_checkpoints
+notebooks
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# データファイル（大きいため）
+data/videos/*.mp4
+data/*.pdf
+*.mp4
+*.avi
+*.mov
+
+# 出力ファイル
+outputs/images/*.png
+outputs/videos/*.mp4
+outputs/**/*.png
+outputs/**/*.mp4
+outputs/**/*.csv
+outputs/**/*.json
+
+# ログ
+*.log
+logs/
+
+# Node.js
+node_modules
+package-lock.json
+
+# その他
+*.bak
+*.tmp
+.cache

@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  basketball-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: basketball-analysis:latest
+    container_name: basketball-analysis
+
+    volumes:
+      # データ永続化
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      # ソースコードマウント（開発用）
+      - ./src:/app/src
+      - ./docs:/app/docs
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Asia/Tokyo
+
+    # GPUアクセス（オプション）
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+    # メモリ制限
+    mem_limit: 8g
+    shm_size: 2g
+
+    # コンテナ名
+    networks:
+      - basketball-net
+
+networks:
+  basketball-net:
+    driver: bridge

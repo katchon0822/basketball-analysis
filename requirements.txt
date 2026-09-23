@@ -1,0 +1,97 @@
+# Basketball Flow Lab - Python Dependencies
+# Created: 2026-03-16
+# Python Version: 3.10+
+
+# ============================================
+# Core Data Analysis
+# ============================================
+
+# NBA API for retrieving play-by-play data
+nba-api>=1.5.0
+
+# Data manipulation and analysis
+pandas>=3.0.0
+numpy>=2.0.0
+
+# ============================================
+# Visualization
+# ============================================
+
+# Plotting libraries
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Japanese font support for matplotlib
+japanize-matplotlib>=1.1.0
+
+# Image processing
+Pillow>=10.0.0
+
+# ============================================
+# Data Collection (B.LEAGUE)
+# ============================================
+
+# HTTP requests
+requests>=2.31.0
+
+# Web scraping (for B.LEAGUE data)
+beautifulsoup4>=4.12.0
+
+# HTML parsing
+lxml>=5.0.0
+
+# ============================================
+# Statistical Analysis
+# ============================================
+
+# Scientific computing
+scipy>=1.11.0
+
+# ============================================
+# Utilities
+# ============================================
+
+# Progress bars
+tqdm>=4.65.0
+
+# Date/time handling
+python-dateutil>=2.8.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# ============================================
+# Development Tools (Optional)
+# ============================================
+
+# Jupyter Notebook (for exploratory analysis)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Code formatting (uncomment if needed)
+# black>=24.0.0
+
+# Linting (uncomment if needed)
+# flake8>=7.0.0
+
+# Type checking (uncomment if needed)
+# mypy>=1.8.0
+
+# Testing (uncomment if needed)
+# pytest>=8.0.0
+
+# ============================================
+# Installation Instructions
+# ============================================
+
+# To install all dependencies:
+#   pip install -r requirements.txt
+#
+# To create a new virtual environment:
+#   python3 -m venv venv
+#   source venv/bin/activate  # macOS/Linux
+#   # venv\Scripts\activate   # Windows
+#   pip install -r requirements.txt
+#
+# To update requirements.txt:
+#   pip freeze > requirements.txt

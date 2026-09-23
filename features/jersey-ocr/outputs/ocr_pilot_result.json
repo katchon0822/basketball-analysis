@@ -1,0 +1,67 @@
+{
+  "total": 5,
+  "correct": 3,
+  "accuracy": 0.6,
+  "cases": [
+    {
+      "file": "jc_navy10.jpg",
+      "ground_truth": "10",
+      "team": "navy",
+      "note": "frame103 正面 前",
+      "raw_guess": "101",
+      "raw_conf": 0.618,
+      "preprocessed_guess": "101",
+      "preprocessed_conf": 0.609,
+      "final_guess": "101",
+      "correct": false
+    },
+    {
+      "file": "jc_navy7.jpg",
+      "ground_truth": "7",
+      "team": "navy",
+      "note": "frame103 背面",
+      "raw_guess": null,
+      "raw_conf": 0.0,
+      "preprocessed_guess": null,
+      "preprocessed_conf": 0.0,
+      "final_guess": null,
+      "correct": false
+    },
+    {
+      "file": "jc_navy4.jpg",
+      "ground_truth": "4",
+      "team": "navy",
+      "note": "frame103 背面(ジャンプ中)",
+      "raw_guess": null,
+      "raw_conf": 0.0,
+      "preprocessed_guess": "4",
+      "preprocessed_conf": 0.991,
+      "final_guess": "4",
+      "correct": true
+    },
+    {
+      "file": "jc_white6.jpg",
+      "ground_truth": "6",
+      "team": "white",
+      "note": "frame103 背面",
+      "raw_guess": "6",
+      "raw_conf": 0.989,
+      "preprocessed_guess": "6",
+      "preprocessed_conf": 0.741,
+      "final_guess": "6",
+      "correct": true
+    },
+    {
+      "file": "jc_navy4_far.jpg",
+      "ground_truth": "4",
+      "team": "navy",
+      "note": "far_450 背面(別フレーム)",
+      "raw_guess": "4",
+      "raw_conf": 1.0,
+      "preprocessed_guess": "4",
+      "preprocessed_conf": 1.0,
+      "final_guess": "4",
+      "correct": true
+    }
+  ]
+}
