@@ -36,13 +36,13 @@ test: ## テスト実行
 # === 分析タスク ===
 
 analyze-three: ## 3試合の自動分析
-	docker-compose run --rm basketball-analysis python analyze_three_games_fast.py
+	docker-compose run --rm basketball-analysis python legacy/analyze_three_games_fast.py
 
 analyze-finals: ## 2024 NBA Finals分析
-	docker-compose run --rm basketball-analysis python run_finals_hc_analysis.py
+	docker-compose run --rm basketball-analysis python legacy/run_finals_hc_analysis.py
 
 analyze-hachimura: ## 八村塁選手分析
-	docker-compose run --rm basketball-analysis python generate_hachimura_3d_heatmap.py
+	docker-compose run --rm basketball-analysis python legacy/generate_hachimura_3d_heatmap.py
 
 # === 動画ダウンロード ===
 

@@ -27,20 +27,20 @@
 ```
 動画入力
   │
-  ├─ ball_tracker_sam3.py         SAM3によるボール追跡（93% / 8370フレーム）
+  ├─ pipeline/ball_tracker_sam3.py         SAM3によるボール追跡（93% / 8370フレーム）
   │
-  ├─ generate_detection_video.py   選手検出・追跡・コートライン・ミニマップ動画出力
+  ├─ pipeline/generate_detection_video.py   選手検出・追跡・コートライン・ミニマップ動画出力
   │    ├─ YOLOv8n-seg             選手セグメント（チームカラー塗りつぶし）
   │    ├─ ByteTrack               ID付き継続追跡
   │    ├─ HSV                     ユニフォーム色でチーム分類
   │    └─ OpticalFlowTracker      手動アノテーション → LK光学流 → 自動再キャリブレーション
   │
-  ├─ generate_tactical_map.py      ブロードキャスト＋フルコート俯瞰マップ動画出力
+  ├─ pipeline/generate_tactical_map.py      ブロードキャスト＋フルコート俯瞰マップ動画出力
   │
-  └─ shot_player_analysis.py       ボール軌跡の放物線フィットでシュート検出
+  └─ pipeline/shot_player_analysis.py       ボール軌跡の放物線フィットでシュート検出
 
 コート校正（手動）
-  annotator.py / annotator_web.py / court_review.py → compute_homography.py
+  calibration/annotator.py / calibration/annotator_web.py / calibration/court_review.py → calibration/compute_homography.py
 ```
 
 詳細な数値・既知の限界は [`STATUS.md`](STATUS.md) にまとめている。
@@ -86,14 +86,18 @@ basketball_analysis/
 │   └── DEPRECATED.md                廃止したアプローチの記録
 ├── features/
 │   ├── jersey-ocr/                  ジャージ番号OCR（README・検証結果つき）
-│   └── player-shot-attribution/     シュート×選手ID 紐付け
-├── src/                          NBA API分析・Bリーグ DID分析のコアモジュール
-├── ball_tracker_sam3.py          SAM3ボール追跡
-├── generate_detection_video.py   選手検出・追跡・ミニマップ動画生成
-├── generate_tactical_map.py      フルコート俯瞰マップ生成
-├── shot_player_analysis.py       シュート検出（放物線フィット）
-├── calibrate.py                  コート校正UI
-└── annotator.py / annotator_web.py / court_review.py   手動アノテーションツール
+│   ├── player-shot-attribution/     シュート×選手ID 紐付け
+│   └── play-pattern-detection/      ボール速度セグメンテーション + P&R候補検出
+├── pipeline/                     現行SAM3パイプライン
+│   ├── ball_tracker_sam3.py          SAM3ボール追跡
+│   ├── generate_detection_video.py   選手検出・追跡・ミニマップ動画生成
+│   ├── generate_tactical_map.py      フルコート俯瞰マップ生成
+│   └── shot_player_analysis.py       シュート検出（放物線フィット）
+├── calibration/                  コート校正・アノテーションツール
+│   ├── calibrate.py                  コート校正UI
+│   └── annotator.py / annotator_web.py / court_review.py
+├── legacy/                       旧NBA API分析・旧YouTube解析パイプライン（超過去分、README参照）
+└── src/                          NBA API分析・Bリーグ DID分析のコアモジュール
 ```
 
 `data/`, `outputs/`, `models/`, `runs/`, `datasets/` はraw動画・大容量モデル・生成物のためGit管理外。

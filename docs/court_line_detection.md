@@ -59,7 +59,7 @@ API メモ: `gemini-2.0-flash` は無料枠上限に達しやすい。`gemini-2.
 
 ---
 
-### 2-5. ライン描画 → 交点計算（旧 `annotator.py` + `compute_homography.py`）
+### 2-5. ライン描画 → 交点計算（旧 `calibration/annotator.py` + `calibration/compute_homography.py`）
 
 ラインを描いて交点を計算するアプローチ。
 
@@ -90,7 +90,7 @@ API メモ: `gemini-2.0-flash` は無料枠上限に達しやすい。`gemini-2.
 ```bash
 cd /Users/yusaku/work/basketball_analysis
 source venv/bin/activate
-python3 annotator.py
+python3 calibration/annotator.py
 ```
 
 ### 4-2. 画面構成
@@ -183,12 +183,12 @@ python3 annotator.py
 
 ---
 
-## 6. ホモグラフィー計算（`compute_homography.py`）
+## 6. ホモグラフィー計算（`calibration/compute_homography.py`）
 
 アノテーション完了後に実行。
 
 ```bash
-python3 compute_homography.py
+python3 calibration/compute_homography.py
 ```
 
 ### 処理フロー
@@ -245,8 +245,8 @@ def to_court(px, py, H):
 
 | ファイル | 役割 | ステータス |
 |---------|------|-----------|
-| `annotator.py` | キーポイント直接アノテーションツール | ✅ 最新版 |
-| `compute_homography.py` | H 行列計算スクリプト | ✅ 完成 |
+| `calibration/annotator.py` | キーポイント直接アノテーションツール | ✅ 最新版 |
+| `calibration/compute_homography.py` | H 行列計算スクリプト | ✅ 完成 |
 | `outputs/annotation_frames/` | 対象フレーム（15枚、t=26〜70s） | ✅ 準備済み |
 | `outputs/annotations.json` | アノテーション保存先 | ⏳ 作業中 |
 | `outputs/homography/homography.json` | 計算済み H 行列 | ⏳ 未完 |

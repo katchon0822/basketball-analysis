@@ -18,7 +18,7 @@ KaliCalib (DeepSportradar 2022) の ResNet+Heatmap モデルを使って、
 import sys, os, cv2, json, numpy as np, argparse
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent / "kalicalib"))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "kalicalib"))
 
 import torch
 from calib3d.points import Point3D
@@ -35,7 +35,7 @@ DEVICE = _get_device()
 print(f"[auto_calibrate] device: {DEVICE}")
 
 # ── KaliCalib のモデルロード (getModel を MPS/CPU 対応にパッチ) ──────────────
-_KALI_DIR   = Path(__file__).parent / "kalicalib"
+_KALI_DIR   = Path(__file__).resolve().parent.parent / "kalicalib"
 _MODEL_PATH = _KALI_DIR / "models" / "model_challenge.pth"
 
 def load_kali_model():

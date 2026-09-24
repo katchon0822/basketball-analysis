@@ -204,7 +204,9 @@ def do_auto_calibrate():
 
     try:
         import sys
-        sys.path.insert(0, str(Path(__file__).parent / "kalicalib"))
+        _root = Path(__file__).resolve().parent.parent
+        sys.path.insert(0, str(_root / "kalicalib"))
+        sys.path.insert(0, str(_root / "calibration"))
         from auto_calibrate import load_kali_model, calibrate_frame, _draw_projected_court
     except Exception as e:
         srv["kali_log"].append(f"Import error: {e}")

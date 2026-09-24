@@ -26,21 +26,21 @@
 ```
 動画入力
   │
-  ├─ ball_tracker_sam3.py        SAM3によるボール追跡（93% / 8370フレーム）
+  ├─ pipeline/ball_tracker_sam3.py        SAM3によるボール追跡（93% / 8370フレーム）
   │
-  ├─ generate_detection_video.py  選手検出・追跡・コートライン・ミニマップ動画出力
+  ├─ pipeline/generate_detection_video.py  選手検出・追跡・コートライン・ミニマップ動画出力
   │    ├─ YOLOv8n-seg            選手セグメント（チームカラー塗りつぶし）
   │    ├─ ByteTrack              ID付き継続追跡
   │    ├─ HSV                    ユニフォーム色でチーム分類
   │    └─ OpticalFlowTracker     手動アノテーション→LK光学流量→90f毎ハリス角自動補正
   │
-  ├─ generate_tactical_map.py     ブロードキャスト＋フルコート俯瞰マップ動画出力
+  ├─ pipeline/generate_tactical_map.py     ブロードキャスト＋フルコート俯瞰マップ動画出力
   │
-  └─ shot_player_analysis.py      SAM3ボール軌跡の放物線フィットでシュート検出
+  └─ pipeline/shot_player_analysis.py      SAM3ボール軌跡の放物線フィットでシュート検出
 
 コート校正（手動）
-  annotator.py / annotator_web.py / court_review.py
-  └─ compute_homography.py → outputs/annotations.json
+  calibration/annotator.py / calibration/annotator_web.py / calibration/court_review.py
+  └─ calibration/compute_homography.py → outputs/annotations.json
 ```
 
 ---
@@ -115,7 +115,7 @@ calibrate.py  ← 新規作成予定
 
 ### 作る順番
 
-1. `calibrate.py` — 会場プロファイル作成UI（クリック式、信頼領域付き）
+1. `calibration/calibrate.py` — 会場プロファイル作成UI（クリック式、信頼領域付き）
 2. コート多角形による幾何フィルタ（コート外の誤検出を除去、学習不要）
 3. 出力テンプレート3点（ハイライト動画 / スタッツ1枚 / ヒートマップ）
 4. Active Learning ループ（怪しいフレームだけ顧問が修正 → バッチ学習）

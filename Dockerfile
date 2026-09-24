@@ -39,7 +39,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # アプリケーションコード
 COPY src/ ./src/
 COPY docs/ ./docs/
-COPY *.py ./
+COPY pipeline/ ./pipeline/
+COPY calibration/ ./calibration/
+COPY legacy/ ./legacy/
+COPY features/ ./features/
 COPY *.sh ./
 
 # データ・出力ディレクトリ作成
@@ -49,4 +52,4 @@ RUN mkdir -p data/videos data/cache outputs/three_games outputs/images
 RUN chmod +x *.sh
 
 # デフォルトコマンド
-CMD ["python", "analyze_three_games_fast.py"]
+CMD ["python", "legacy/analyze_three_games_fast.py"]

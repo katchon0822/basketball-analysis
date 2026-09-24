@@ -22,7 +22,7 @@
 
 **概要:** HSV 色空間でコートラインを検出し、ホモグラフィーを推定するパイプライン。v22 まで反復改善した。
 
-**廃止理由:** SAM3 + 手動アノテーション方式（`generate_detection_video.py`）に比べ、コート検出精度が不安定で選手トラッキング精度も劣る。SAM3 方式でボール追跡率 93%、アノテーション方式でコート検出が安定したため、完全置き換え。
+**廃止理由:** SAM3 + 手動アノテーション方式（`pipeline/generate_detection_video.py`）に比べ、コート検出精度が不安定で選手トラッキング精度も劣る。SAM3 方式でボール追跡率 93%、アノテーション方式でコート検出が安定したため、完全置き換え。
 
 **主な試みと限界:**
 - v18: YOLOv8x-pose による 18 キーポイント検出 → 体育館照明下で不安定
@@ -33,7 +33,7 @@
 
 ## ball_tracker_sam2.py（SAM2 ボール追跡）
 
-**廃止理由:** SAM3 に比べ推論速度が遅く追跡率も低い。`ball_tracker_sam3.py` に完全置き換え。
+**廃止理由:** SAM3 に比べ推論速度が遅く追跡率も低い。`pipeline/ball_tracker_sam3.py` に完全置き換え。
 
 ---
 
@@ -65,13 +65,13 @@
 
 ## detect_shots_v2.py（シュート検出 v2）
 
-**廃止理由:** `outputs/hsv_only/stubs/hsv_tracks_v18.pkl` に依存しており、旧パイプライン（run_hsv_only_v18）の産物。SAM3 パイプラインでは `shot_player_analysis.py` + `ball_positions_sam3_300s.json` を使用。
+**廃止理由:** `outputs/hsv_only/stubs/hsv_tracks_v18.pkl` に依存しており、旧パイプライン（run_hsv_only_v18）の産物。SAM3 パイプラインでは `pipeline/shot_player_analysis.py` + `ball_positions_sam3_300s.json` を使用。
 
 ---
 
 ## player_tracking_detail.py（詳細トラッキング）
 
-**廃止理由:** 独立した追跡スクリプト。`generate_detection_video.py` が同等以上の機能を内包するため冗長。
+**廃止理由:** 独立した追跡スクリプト。`pipeline/generate_detection_video.py` が同等以上の機能を内包するため冗長。
 
 ---
 
