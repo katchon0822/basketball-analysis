@@ -56,7 +56,7 @@
 | 負荷・怪我リスク特徴量PoC | 71トラックの移動距離・高強度走行・ピーク速度を算出 | [features/workload-injury-risk/README.md](features/workload-injury-risk/README.md) |
 | ゼロショットMOT検証（McByte++） | 選手10人にID11個、IDスイッチ実質ゼロ、re-ID成功1件 | [docs/CASE_STUDIES.md#mcbyte](docs/CASE_STUDIES.md#mcbyte-の検証) |
 | ジャージ番号OCR パイロット | 5/5（100%）、追加学習なし | [features/jersey-ocr/README.md](features/jersey-ocr/README.md) |
-| 選手別シュート帰属 | トラッキングID×HSVチーム分類でシュートを選手に紐付け | [features/player-shot-attribution/README.md](features/player-shot-attribution/README.md) |
+| 選手別シュート帰属 | 実行したが妥当な帰属は14件中2件のみ。上流のシュート検出不良が原因と特定 | [features/player-shot-attribution/README.md](features/player-shot-attribution/README.md) |
 | 5分間ゲームレポート | ID断片化・シュート成否判定の限界を検証・報告 | [docs/CASE_STUDIES.md#5分間ゲームレポート](docs/CASE_STUDIES.md#5分間ゲームレポート) |
 | フルコート同期ビューア | 遠い側ゴールのキャリブレーション不能を確認、誠実な設計に変更 | [docs/CASE_STUDIES.md#フルコート同期ビューア](docs/CASE_STUDIES.md#フルコート同期ビューア) |
 | Bリーグ アリーナ経営効果（DID） | パネルDIDで+3.1億円/年、p=0.017 | [docs/CASE_STUDIES.md#bリーグアリーナ効果did分析](docs/CASE_STUDIES.md#bリーグアリーナ効果did分析) |

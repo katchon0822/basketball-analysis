@@ -1,0 +1,180 @@
+{
+  "window_s": [
+    0,
+    70.0
+  ],
+  "match_window_s": 0.5,
+  "n_shots": 14,
+  "n_matched": 14,
+  "n_unmatched": 0,
+  "shots": [
+    {
+      "ts": 0.6,
+      "ball_court_cm": [
+        751.8,
+        1330.1
+      ],
+      "shooter": {
+        "track_id": "5",
+        "team": 2,
+        "dist_cm": 744.3
+      }
+    },
+    {
+      "ts": 15.52,
+      "ball_court_cm": [
+        650.0,
+        1510.2
+      ],
+      "shooter": {
+        "track_id": "60",
+        "team": 2,
+        "dist_cm": 660.6
+      }
+    },
+    {
+      "ts": 23.52,
+      "ball_court_cm": [
+        1037.8,
+        726.1
+      ],
+      "shooter": {
+        "track_id": "1",
+        "team": 1,
+        "dist_cm": 996.7
+      }
+    },
+    {
+      "ts": 26.93,
+      "ball_court_cm": [
+        -698.8,
+        -147.3
+      ],
+      "shooter": {
+        "track_id": "41",
+        "team": 1,
+        "dist_cm": 560.0
+      }
+    },
+    {
+      "ts": 32.73,
+      "ball_court_cm": [
+        -1364.5,
+        -1031.2
+      ],
+      "shooter": {
+        "track_id": "214",
+        "team": 2,
+        "dist_cm": 952.4
+      }
+    },
+    {
+      "ts": 35.94,
+      "ball_court_cm": [
+        -1909.7,
+        -1654.2
+      ],
+      "shooter": {
+        "track_id": "231",
+        "team": 2,
+        "dist_cm": 1522.2
+      }
+    },
+    {
+      "ts": 38.64,
+      "ball_court_cm": [
+        -811.9,
+        -451.4
+      ],
+      "shooter": {
+        "track_id": "256",
+        "team": null,
+        "dist_cm": 490.7
+      }
+    },
+    {
+      "ts": 41.34,
+      "ball_court_cm": [
+        1497.6,
+        905.9
+      ],
+      "shooter": {
+        "track_id": "165",
+        "team": 2,
+        "dist_cm": 1317.4
+      }
+    },
+    {
+      "ts": 46.45,
+      "ball_court_cm": [
+        -372.0,
+        1439.5
+      ],
+      "shooter": {
+        "track_id": "292",
+        "team": 1,
+        "dist_cm": 533.3
+      }
+    },
+    {
+      "ts": 50.05,
+      "ball_court_cm": [
+        -51.7,
+        164.2
+      ],
+      "shooter": {
+        "track_id": "360",
+        "team": 2,
+        "dist_cm": 172.7
+      }
+    },
+    {
+      "ts": 53.35,
+      "ball_court_cm": [
+        119.4,
+        182.1
+      ],
+      "shooter": {
+        "track_id": "277",
+        "team": 1,
+        "dist_cm": 80.2
+      }
+    },
+    {
+      "ts": 55.86,
+      "ball_court_cm": [
+        1153.4,
+        645.4
+      ],
+      "shooter": {
+        "track_id": "279",
+        "team": 1,
+        "dist_cm": 563.8
+      }
+    },
+    {
+      "ts": 65.17,
+      "ball_court_cm": [
+        -411.2,
+        -641.5
+      ],
+      "shooter": {
+        "track_id": "461",
+        "team": 1,
+        "dist_cm": 906.8
+      }
+    },
+    {
+      "ts": 68.77,
+      "ball_court_cm": [
+        -747.2,
+        -663.6
+      ],
+      "shooter": {
+        "track_id": "472",
+        "team": 1,
+        "dist_cm": 1080.9
+      }
+    }
+  ]
+}
