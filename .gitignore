@@ -67,6 +67,11 @@ ball_positions_sam3_*.json
 sam3_all_objects_*.json
 tracking_*.json
 
+# Third-party raw data pulled in for validation (not ours to redistribute)
+features/workload-injury-risk/nba_validation/*.7z
+features/workload-injury-risk/nba_validation/*.json
+!features/workload-injury-risk/nba_validation/nba_workload_fullgame.json
+
 # Keep small, curated demo assets under features/*/outputs/
 !features/**/outputs/
 
