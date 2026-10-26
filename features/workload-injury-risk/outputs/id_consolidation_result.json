@@ -1,0 +1,471 @@
+{
+  "n_tracks_attempted": 24,
+  "n_ocr_success": 7,
+  "results": [
+    {
+      "track_id": "263",
+      "team": 1,
+      "ts": 59.16,
+      "court_cm": [
+        471.9,
+        795.4
+      ],
+      "px_estimate": [
+        539.8,
+        545.0
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 55.1,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track263_crop.jpg"
+    },
+    {
+      "track_id": "302",
+      "team": 2,
+      "ts": 60.69,
+      "court_cm": [
+        166.0,
+        586.7
+      ],
+      "px_estimate": [
+        591.0,
+        473.7
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 54.5,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track302_crop.jpg"
+    },
+    {
+      "track_id": "279",
+      "team": 1,
+      "ts": 59.43,
+      "court_cm": [
+        313.1,
+        -124.6
+      ],
+      "px_estimate": [
+        1066.4,
+        436.3
+      ],
+      "jersey_number": "6",
+      "confidence": 0.982,
+      "total_distance_m": 50.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track279_crop.jpg"
+    },
+    {
+      "track_id": "41",
+      "team": 1,
+      "ts": 26.03,
+      "court_cm": [
+        -346.4,
+        261.2
+      ],
+      "px_estimate": [
+        719.9,
+        376.3
+      ],
+      "jersey_number": "10",
+      "confidence": 0.994,
+      "total_distance_m": 42.5,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track41_crop.jpg"
+    },
+    {
+      "track_id": "8",
+      "team": 2,
+      "ts": 11.91,
+      "court_cm": [
+        -388.4,
+        1273.6
+      ],
+      "px_estimate": [
+        832.3,
+        520.5
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 41.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track8_crop.jpg"
+    },
+    {
+      "track_id": "139",
+      "team": 1,
+      "ts": 31.06,
+      "court_cm": [
+        98.9,
+        79.2
+      ],
+      "px_estimate": [
+        937.3,
+        420.0
+      ],
+      "jersey_number": "7",
+      "confidence": 0.385,
+      "total_distance_m": 40.0,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track139_crop.jpg"
+    },
+    {
+      "track_id": "292",
+      "team": 1,
+      "ts": 56.99,
+      "court_cm": [
+        -528.2,
+        311.1
+      ],
+      "px_estimate": [
+        572.7,
+        372.6
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 32.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track292_crop.jpg"
+    },
+    {
+      "track_id": "126",
+      "team": 2,
+      "ts": 28.23,
+      "court_cm": [
+        310.3,
+        478.6
+      ],
+      "px_estimate": [
+        815.4,
+        493.2
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 30.3,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track126_crop.jpg"
+    },
+    {
+      "track_id": "306",
+      "team": 2,
+      "ts": 52.62,
+      "court_cm": [
+        327.3,
+        389.3
+      ],
+      "px_estimate": [
+        629.6,
+        546.8
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 28.2,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track306_crop.jpg"
+    },
+    {
+      "track_id": "277",
+      "team": 1,
+      "ts": 50.55,
+      "court_cm": [
+        318.9,
+        209.4
+      ],
+      "px_estimate": [
+        486.9,
+        500.0
+      ],
+      "jersey_number": "5",
+      "confidence": 0.999,
+      "total_distance_m": 28.1,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track277_crop.jpg"
+    },
+    {
+      "track_id": "426",
+      "team": 1,
+      "ts": 65.7,
+      "court_cm": [
+        371.8,
+        647.9
+      ],
+      "px_estimate": [
+        493.4,
+        503.5
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 27.7,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track426_crop.jpg"
+    },
+    {
+      "track_id": "165",
+      "team": 2,
+      "ts": 34.9,
+      "court_cm": [
+        170.0,
+        -22.2
+      ],
+      "px_estimate": [
+        941.3,
+        422.0
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 24.5,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track165_crop.jpg"
+    },
+    {
+      "track_id": "25",
+      "team": 2,
+      "ts": 11.14,
+      "court_cm": [
+        -318.1,
+        817.2
+      ],
+      "px_estimate": [
+        1178.0,
+        590.6
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 23.3,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track25_crop.jpg"
+    },
+    {
+      "track_id": "100",
+      "team": 2,
+      "ts": 24.72,
+      "court_cm": [
+        -102.1,
+        287.9
+      ],
+      "px_estimate": [
+        781.3,
+        410.7
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 23.0,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track100_crop.jpg"
+    },
+    {
+      "track_id": "46",
+      "team": 2,
+      "ts": 11.81,
+      "court_cm": [
+        -163.0,
+        1520.2
+      ],
+      "px_estimate": [
+        701.6,
+        458.4
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 22.4,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track46_crop.jpg"
+    },
+    {
+      "track_id": "145",
+      "team": 1,
+      "ts": 26.49,
+      "court_cm": [
+        591.9,
+        863.4
+      ],
+      "px_estimate": [
+        608.8,
+        592.4
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 19.5,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track145_crop.jpg"
+    },
+    {
+      "track_id": "365",
+      "team": null,
+      "ts": 55.69,
+      "court_cm": [
+        -414.8,
+        939.5
+      ],
+      "px_estimate": [
+        251.4,
+        424.7
+      ],
+      "jersey_number": "13",
+      "confidence": 0.987,
+      "total_distance_m": 19.2,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track365_crop.jpg"
+    },
+    {
+      "track_id": "60",
+      "team": 2,
+      "ts": 14.61,
+      "court_cm": [
+        -193.1,
+        1279.7
+      ],
+      "px_estimate": [
+        796.7,
+        481.5
+      ],
+      "jersey_number": "5",
+      "confidence": 1.0,
+      "total_distance_m": 18.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track60_crop.jpg"
+    },
+    {
+      "track_id": "423",
+      "team": 2,
+      "ts": 62.2,
+      "court_cm": [
+        145.9,
+        73.4
+      ],
+      "px_estimate": [
+        890.7,
+        429.9
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 18.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track423_crop.jpg"
+    },
+    {
+      "track_id": "176",
+      "team": 2,
+      "ts": 30.03,
+      "court_cm": [
+        590.9,
+        549.4
+      ],
+      "px_estimate": [
+        833.7,
+        575.9
+      ],
+      "jersey_number": "5",
+      "confidence": 1.0,
+      "total_distance_m": 17.0,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track176_crop.jpg"
+    },
+    {
+      "track_id": "92",
+      "team": 1,
+      "ts": 24.92,
+      "court_cm": [
+        29.9,
+        1156.5
+      ],
+      "px_estimate": [
+        204.5,
+        503.1
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 16.9,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track92_crop.jpg"
+    },
+    {
+      "track_id": "186",
+      "team": 1,
+      "ts": 32.0,
+      "court_cm": [
+        51.8,
+        535.6
+      ],
+      "px_estimate": [
+        555.3,
+        443.2
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 16.9,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track186_crop.jpg"
+    },
+    {
+      "track_id": "392",
+      "team": 2,
+      "ts": 59.99,
+      "court_cm": [
+        465.4,
+        494.8
+      ],
+      "px_estimate": [
+        746.9,
+        513.4
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 16.2,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track392_crop.jpg"
+    },
+    {
+      "track_id": "6",
+      "team": 2,
+      "ts": 3.54,
+      "court_cm": [
+        -65.4,
+        1027.7
+      ],
+      "px_estimate": [
+        909.3,
+        481.0
+      ],
+      "jersey_number": null,
+      "confidence": 0.0,
+      "total_distance_m": 15.8,
+      "crop_file": "features/workload-injury-risk/outputs/id_consolidation_frames/track6_crop.jpg"
+    }
+  ],
+  "consolidated_players": [
+    {
+      "team": 1,
+      "jersey_number": "6",
+      "track_ids": [
+        "279"
+      ],
+      "n_tracks_merged": 1,
+      "total_distance_m": 50.8
+    },
+    {
+      "team": 1,
+      "jersey_number": "10",
+      "track_ids": [
+        "41"
+      ],
+      "n_tracks_merged": 1,
+      "total_distance_m": 42.5
+    },
+    {
+      "team": 1,
+      "jersey_number": "7",
+      "track_ids": [
+        "139"
+      ],
+      "n_tracks_merged": 1,
+      "total_distance_m": 40.0
+    },
+    {
+      "team": 1,
+      "jersey_number": "5",
+      "track_ids": [
+        "277"
+      ],
+      "n_tracks_merged": 1,
+      "total_distance_m": 28.1
+    },
+    {
+      "team": null,
+      "jersey_number": "13",
+      "track_ids": [
+        "365"
+      ],
+      "n_tracks_merged": 1,
+      "total_distance_m": 19.2
+    },
+    {
+      "team": 2,
+      "jersey_number": "5",
+      "track_ids": [
+        "60",
+        "176"
+      ],
+      "n_tracks_merged": 2,
+      "total_distance_m": 35.8
+    }
+  ]
+}
